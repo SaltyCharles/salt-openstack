@@ -1,4 +1,4 @@
-base: 
+openstack: 
   "ubuntu.openstack":
     - match: list
     - {{ grains['os'] }}
