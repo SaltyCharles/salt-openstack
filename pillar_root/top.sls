@@ -1,7 +1,7 @@
 openstack: 
-  "<minion_id_1>,<minion_id_2>":
+  "ubuntu.openstack":
     - match: list
     - {{ grains['os'] }}
-    - <openstack_environment_name>.credentials
-    - <openstack_environment_name>.environment
-    - <openstack_environment_name>.networking
+    - ubuntu_openstack.credentials
+    - ubuntu_openstack.environment
+    - ubuntu_openstack.networking
