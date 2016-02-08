@@ -25,7 +25,7 @@ resources:
     conf:
       mysqld: "/etc/mysql/conf.d/mysqld_openstack.cnf"
     packages:
-      - "mysql-server"
+      - "mysql-server-5.5"
       - "mysql-server-core-5.5"
       - "mysql-client-core-5.5"
       - "mysql-common"

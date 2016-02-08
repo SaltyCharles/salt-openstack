@@ -32,6 +32,7 @@ mysql_conf:
 mysql_service_running:
   service.running:
     - enable: True
+    - restart: True
     - name: {{ mysql['services']['mysql'] }}
     - watch: 
       - file: mysql_conf
