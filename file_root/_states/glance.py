@@ -37,7 +37,7 @@ def __virtual__():
     '''
     Only load if glance module is present in __salt__
     '''
-    return 'glance' if 'glance.image_list' in __salt__ else False
+    return 'glance' '''if 'glance.image_list' in __salt__ else False'''
 
 
 def image_present(name,
