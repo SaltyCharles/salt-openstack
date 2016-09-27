@@ -13,7 +13,7 @@ debug_mode: False
 system_upgrade: True
 
 hosts:
-  "ubuntu.openstack": "192.168.33.17"
+  "ubuntu.openstack": "10.1.1.143"
 
 controller: "ubuntu.openstack"
 network: "ubuntu.openstack"

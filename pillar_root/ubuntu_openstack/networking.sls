@@ -40,19 +40,19 @@ neutron:
       provider_network_type: "flat"
       subnets:
         public_subnet:
-          cidr: '192.168.33.0/24'
+          cidr: '10.1.1.0/24'
           allocation_pools:
-            - start: '192.168.33.80'
-              end: '192.168.33.90'
+            - start: '10.1.1.80'
+              end: '10.1.1.90'
           enable_dhcp: False
-          gateway_ip: "192.168.33.2"
+          gateway_ip: "10.1.1.1"
     private:
       user: "admin"
       tenant: "admin"
       admin_state_up: True
       subnets:
         private_subnet:
-          cidr: '10.0.1.0/24'
+          cidr: '10.2.1.0/24'
           dns_nameservers:
             - 8.8.8.8
 
